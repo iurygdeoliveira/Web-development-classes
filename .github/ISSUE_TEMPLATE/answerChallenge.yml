@@ -19,26 +19,9 @@ body:
     validations:
       required: true
   - type: textarea
-    id: reproduction-steps
+    id: additional-tips
     attributes:
-      label: Reproduction steps
-      description: How should the steps be?
+      label: "Additional tips"
       placeholder: "Type here"
-    validations:
-      required: true
-  - type: textarea
-    id: expected-behavior
-    attributes:
-      label: Expected Behavior
-      description: What is the expected behavior?
-      placeholder: "Type here"
-    validations:
-      required: true
-  - type: textarea
-    id: actual-behavior
-    attributes:
-      label: Actual Behavior
-      description: What did actually happen? Add screenshots, if applicable?
-      placeholder: "it actually ..."
     validations:
       required: true
