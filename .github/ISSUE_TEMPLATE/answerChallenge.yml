@@ -25,17 +25,27 @@ body:
       placeholder: "Type here"
     validations:
       required: true
-  - type: textarea
-    id: logs
+   - type: textarea
+    id: reproduction-steps
     attributes:
-      label: Relevant log output
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
-      render: shell
-  - type: checkboxes
-    id: terms
+      label: Reproduza seus passos
+      description: Por favor diga o passo a passo realizado por você
+      placeholder: "Type here"
+    validations:
+      required: true
+    - type: textarea
+    id: expected-behavior
     attributes:
-      label: Code of Conduct
-      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
-      options:
-        - label: I agree to follow this project's Code of Conduct
-          required: true
+      label: Expected Behavior
+      description: What did you think would happen?
+      placeholder: "Type here"
+    validations:
+      required: true
+    - type: textarea
+    id: actual-behavior
+    attributes:
+      label: Actual Behavior
+      description: What did actually happen? Add screenshots, if applicable?
+      placeholder: "it actually ..."
+    validations:
+      required: true
