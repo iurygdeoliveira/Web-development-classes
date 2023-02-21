@@ -1,7 +1,6 @@
 name: Challenge response
 description: Challenge response
 title: "🚀 Response: "
-labels: ["Response", "Commit"]
 body:
   - type: markdown
     attributes:
@@ -23,7 +22,7 @@ body:
       placeholder: "Type here"
     validations:
       required: true
-   - type: textarea
+  - type: textarea
     id: reproduction-steps
     attributes:
       label: Reproduza seus passos
@@ -31,7 +30,7 @@ body:
       placeholder: "Type here"
     validations:
       required: true
-    - type: textarea
+  - type: textarea
     id: expected-behavior
     attributes:
       label: Expected Behavior
@@ -39,7 +38,7 @@ body:
       placeholder: "Type here"
     validations:
       required: true
-    - type: textarea
+  - type: textarea
     id: actual-behavior
     attributes:
       label: Actual Behavior
