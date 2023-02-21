@@ -1,22 +1,22 @@
 name: Challenge response
 description: Challenge response
-title: "[Bug]: "
-labels: ["bug", "triage"]
+title: "🚀 Response: "
+labels: ["Response", "Commit"]
 assignees:
   - octocat
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this bug report!
+        Congratulations on your commitment to answering this challenge!
   - type: input
     id: contact
     attributes:
       label: Contact Details
-      description: How can we get in touch with you if we need more info?
-      placeholder: ex. email@example.com
+      description: Enter your email in case I need to contact you for more information
+      placeholder: email@example.com
     validations:
-      required: false
+      required: true
   - type: textarea
     id: what-happened
     attributes:
