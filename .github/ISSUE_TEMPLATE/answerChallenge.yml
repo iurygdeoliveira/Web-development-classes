@@ -25,8 +25,8 @@ body:
   - type: textarea
     id: reproduction-steps
     attributes:
-      label: Reproduza seus passos
-      description: Por favor diga o passo a passo realizado por você
+      label: Reproduction steps
+      description: Please tell us the step by step that you have done
       placeholder: "Type here"
     validations:
       required: true
