@@ -1,11 +1,7 @@
-name: Challenge response
-description: Challenge response
-title: "🚀 Response: "
+name: Challenge
+description: Challenge describe
+title: "🚀 Challenge: "
 body:
-  - type: markdown
-    attributes:
-      value: |
-        Congratulations on your commitment to answering this challenge!
   - type: input
     id: contact
     attributes:
@@ -15,10 +11,10 @@ body:
     validations:
       required: true
   - type: textarea
-    id: describe-answer
+    id: describe-challenge
     attributes:
-      label: Describe your answer
-      description: A clear and concise description of your answer
+      label: Challenge Description
+      description: A clear and concise description of the challenge
       placeholder: "Type here"
     validations:
       required: true
@@ -26,7 +22,7 @@ body:
     id: reproduction-steps
     attributes:
       label: Reproduction steps
-      description: Please tell us the step by step that you have done
+      description: How should the steps be?
       placeholder: "Type here"
     validations:
       required: true
@@ -34,7 +30,7 @@ body:
     id: expected-behavior
     attributes:
       label: Expected Behavior
-      description: What did you think would happen?
+      description: What is the expected behavior?
       placeholder: "Type here"
     validations:
       required: true
