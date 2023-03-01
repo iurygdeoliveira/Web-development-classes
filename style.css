@@ -23,4 +23,6 @@
     margin: 20px auto;
     max-width: 100%;
     height: auto;
+    max-height: 300px;
+    /* adicionado para limitar a altura da imagem */
 }
