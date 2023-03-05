@@ -7,11 +7,15 @@ th,
 td {
     text-align: left;
     padding: 8px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: red;
 }
 
 th {
     background-color: #333;
     color: white;
+    font-family: Arial, Helvetica, sans-serif
+
 }
 
 tr:nth-child(even) {
@@ -22,3 +26,9 @@ tr:nth-child(even) {
     width: 100px;
     height: auto;
 }
+
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    color: red;
+}
+
