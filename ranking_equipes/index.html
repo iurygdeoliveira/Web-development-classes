@@ -1,40 +1,73 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>Ranqueamento de Equipes</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
-
 <body>
-    <h1>Ranqueamento de Equipes</h1>
-    <table>
-        <tr>
-            <th>Posição</th>
-            <th>Logotipo</th>
-            <th>Equipe</th>
-            <th>Pontuação</th>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td><img src="logo1.jpg" alt="Logo da Equipe 1" class="logo"></td>
-            <td>Equipe 1</td>
-            <td>10</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td><img src="logo2.jpg" alt="Logo da Equipe 2" class="logo"></td>
-            <td>Equipe 2</td>
-            <td>8</td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td><img src="logo3.jpg" alt="Logo da Equipe 3" class="logo"></td>
-            <td>Equipe 3</td>
-            <td>6</td>
-        </tr>
-    </table>
-</body>
+    
+    <nav id="nav-bar">
+        <div id="mestre">
+            <div id="direita">
+                <h3>Desenvolvimento Web</h3>
+            </div>
+            <div id="esquerda">
+                <a href="#">Home</a>
+                <a href="#">Desafios</a>
+            </div>
 
+        </div>
+      
+    </nav>
+
+    <div id="banner">
+        <h1>Ranking Da Equipes</h1>
+    </div>
+    
+    <section id="tables">
+        <h2>Ranqueamento de Equipes</h2>
+        <table>
+            <tr>
+                <th class="posicao">Posição</th>
+                <th>Equipe</th>
+                <th width = 10%>Turma</th>
+                <th id="th-centro">Pontuação</th>
+                <th>Nota no Boletim</th>
+            </tr>
+            <tr>
+                <td class="centro-td">1</td>
+                <td colspan="2" class="logo-table"><img src="logotipos/ORCACA.jpg" alt="ORCACA" class="logo"> ORCACA </td>
+                <td>TADS</td>
+                <td class="centro-td">2</td>
+                <td> em definição </td>
+            </tr>
+            <tr>
+                <td class="centro-td">2</td>
+                <td colspan="2" class="logo-table"><img src="logotipos/ThreeCoders.png" alt="ThreeCoders" class="logo"> ThreeCoders </td>
+                <td>3º Ano A</td>
+                <td class="centro-td">2</td>
+                <td> em definição </td>
+            </tr>
+            <tr>
+                <td class="centro-td">3</td>
+                <td colspan="2" class="logo-table"><img src="logotipos/Valkyrie.png" alt="Valkyrie" class="logo">Valkyrie</td>
+        
+                <td>3º Ano A</td>
+                <td class="centro-td">1</td>
+                <td> em definição </td>
+            </tr>
+
+    </table>
+    </section>
+   
+    <footer>
+        <p>@copyright 2023 DUO ORCACA </p><img src="logotipos/Orcaca.png" alt="ORCACA" width="50px" height="50px">
+    </footer>
+    
+
+</body>
 </html>
