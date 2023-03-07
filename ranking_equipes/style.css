@@ -1,6 +1,95 @@
-table {
-    border-collapse: collapse;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+#nav-bar{
     width: 100%;
+    height: 12vh;
+    background-color: #242424;
+
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    color: #fff;
+
+}
+
+#nav-bar #mestre{
+    width: 90%;
+
+
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    margin: 0px auto;
+}
+
+#nav-bar #mestre #direita{
+    width: 70%;
+    
+}
+
+#nav-bar #mestre #direita h3{
+    font-size: 200%;
+    
+}
+
+#nav-bar #mestre #esquerda{
+    width: 30%;
+    
+
+}
+#nav-bar #mestre #esquerda a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 120%;
+    
+    margin-left: 30px;
+    padding: 10px 30px;
+    border-radius: 30px;
+}
+
+#nav-bar #mestre #esquerda a:hover{
+    background-color: #31A578;
+
+}
+
+#banner{
+    width: 100%;
+    height: 40vh;
+
+    background:linear-gradient(to right,#56d8a6,#349973,#1aa36f);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#banner h1{
+    font-size: 300%;
+    color: #fff;
+}
+
+h2 {
+    font-size: 150%;
+    width: 90%;
+    margin: 50px auto 10px auto;
+    color: #383737;
+}
+
+table {
+ 
+    border-collapse: collapse;
+    width: 90%;
+ 
+    margin: 0px auto 100px auto;
 }
 
 th,
@@ -9,9 +98,19 @@ td {
     padding: 8px;
 }
 
+td{
+    font-size: 120%;
+    font-weight: 600;
+    color: #383737;
+}
+
 th {
     background-color: #333;
     color: white;
+}
+
+tr th{
+    line-height: 5vh;
 }
 
 tr:nth-child(even) {
@@ -19,6 +118,43 @@ tr:nth-child(even) {
 }
 
 .logo {
-    width: 50px;
+    width: 100px;
     height: auto;
+}
+
+.logo-table{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.logo-table img{
+    margin: 10px 20px 10px 0px;
+    border-radius: 90px;
+    box-shadow: 1px 1px 3px #242424;
+    
+}
+
+.posicao{
+    width: 15%;
+    text-align: center;
+}
+
+.centro-td{
+    text-align: center;
+}
+
+#th-centro{
+    text-align: center;
+    width: 20%;
+}
+
+footer{
+    width: 100%;
+    height: 10vh;
+    color: #fff;
+    background-color: #242424;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
