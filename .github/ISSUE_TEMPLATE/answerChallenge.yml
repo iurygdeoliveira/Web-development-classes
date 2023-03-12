@@ -1,6 +1,6 @@
 name: Challenge
 description: Challenge describe
-title: "🚀 Challenge: "
+title: "Challenge: "
 body:
   - type: input
     id: contact
