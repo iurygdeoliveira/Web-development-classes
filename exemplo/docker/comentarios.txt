@@ -1,0 +1,10 @@
+app: Pasta com o codigo da aplicação
+public: é o ponto de entrada da aplicação
+src: contém o codigo fonte da aplicação
+
+docker: Contem os arquivos de configuração dos conteiners no docker
+ngnix: contem o arquivo de configuração do servidor web
+php: contem os arquivos de configuração do php
+
+.env: Contem informações sigilosas ou sensiveis da aplicação
+docker-compose.yml contem as informação de gerenciamento para o docker

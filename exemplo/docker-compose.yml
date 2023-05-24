@@ -1,0 +1,37 @@
+version: "3"
+
+services:
+  app: 
+    build: ./docker/php
+    container_name: app
+    restart: always
+    tty: true
+    volumes:
+      - ./app:/var/www/html/app
+      - ./.env:/var/www/html/.env
+      - ./docker/php/php.ini:/usr/local/etc/php/php.ini
+      - ./docker/php/opcache.ini:/usr/local/etc/php/conf.d/docker-php-ext-opcache.ini
+      - ./docker/php/xdebug.ini:/usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
+    ports:
+      - 9000:9000
+    networks:
+      - rede
+
+  nginx:
+    image: nginx:alpine
+    container_name: nginx
+    restart: always
+    tty: true
+    volumes:
+      - ./app:/var/www/html/app
+      - ./docker/nginx/nginx.conf:/etc/nginx/conf.d/default.conf
+    ports:
+      - "80:80"
+    depends_on:
+      - app
+    networks:
+      - rede
+
+networks:
+  rede:
+    driver: bridge
