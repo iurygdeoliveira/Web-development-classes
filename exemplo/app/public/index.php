@@ -7,7 +7,7 @@ declare(strict_types=1);
 // Ativando o gerenciador de dependencias do PHP
 require_once __DIR__ . '/../vendor/autoload.php';
 
-use League\Route\Router; #Carrega uma biblioteca que roteia as requisições
+use League\Route\Rlsouter; #Carrega uma biblioteca que roteia as requisições
 use src\core\Response;   #Carrega uma biblioteca que emite respostas para o cliente
 use Dotenv\Dotenv; # Carrega uma biblioteca que lê informações do arquivo .env
 
