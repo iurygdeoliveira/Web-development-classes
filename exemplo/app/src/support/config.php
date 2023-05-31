@@ -24,7 +24,7 @@ define("CONF_VIEW_ASSETS", __DIR__ . "/../../public/assets");
 
 // ### DESCRIPTION ###
 define("CONF_SITE_LANG", "pt-BR");
-define("CONF_SITE_DESCRIPTION", "pt-BR");
+define("CONF_SITE_DESCRIPTION", "Esse é um site de exemplo");
 define("CONF_SITE_AUTHOR", "Iury Gomes de Oliveira");
 
 // ### LOGS ###
