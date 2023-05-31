@@ -7,14 +7,14 @@ declare(strict_types=1);
 // Ativando o gerenciador de dependencias do PHP
 require_once __DIR__ . '/../vendor/autoload.php';
 
-use League\Route\Rlsouter; #Carrega uma biblioteca que roteia as requisições
+use League\Route\Router; #Carrega uma biblioteca que roteia as requisições
 use src\core\Response;   #Carrega uma biblioteca que emite respostas para o cliente
-use Dotenv\Dotenv; # Carrega uma biblioteca que lê informações do arquivo .env
+#use Dotenv\Dotenv; # Carrega uma biblioteca que lê informações do arquivo .env
 
 // Efetivamente lendo as informações do arquivo
 // .env e trazendo para a aplicação
-$dotenv = Dotenv::createImmutable(CONF_DOTENV);
-$dotenv->load();
+// $dotenv = Dotenv::createImmutable(CONF_DOTENV);
+// $dotenv->load();
 
 // Ativando um modo de depuração
 if (CONF_DEV_MOD) {

@@ -40,7 +40,7 @@ function url_back(): string
  */
 function path(string $path = null, string $asset): string
 {
-    if (Str::contains($_SERVER['HTTP_HOST'], 'localhost')) {
+    if (Str::contains($_SERVER['HTTP_HOST'], '10.113.70.230')) {
         if ($path) {
             return CONF_URL_TEST . "/assets/$asset/" . ($path[0] == "/" ? mb_substr($path, 1) : $path);
         }
